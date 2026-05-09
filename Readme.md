@@ -129,15 +129,15 @@ EAAS/
 │   └── feature_columns.pkl
 │
 ├── Notebooks/
-│   ├── EDA.ipynb
-│   └── Model_Training.ipynb
+│   ├── 01_Data_Cleaning.ipynb
+|   ├── 02_EDA_Analysis.ipynb
+│   └── 03_Model_Training.ipynb
 │
 ├── PowerBI/
 │   └── EAAS_Dashboard.pbix
 │
 ├── Reports/
-│   ├── Project_Report.pdf
-│   └── Presentation.pptx
+│   └── Screenshots/
 │
 ├── Streamlit_App/
 │   ├── app.py
