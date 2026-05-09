@@ -1,0 +1,1101 @@
+/* ========================================
+   EAAS PREMIUM PURPLE THEME
+======================================== */
+
+
+/* ========================================
+   GLOBAL SETTINGS
+======================================== */
+
+html,
+body,
+[class*="css"] {
+
+    font-family:
+        'Poppins', sans-serif;
+
+    scroll-behavior:
+        smooth;
+}
+
+
+/* ========================================
+   MAIN APP BACKGROUND
+======================================== */
+
+.stApp {
+
+    background:
+        linear-gradient(
+            135deg,
+            #0f051d 0%,
+            #1a0933 30%,
+            #2d1155 70%,
+            #3b136d 100%
+        );
+
+    color:
+        white;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.main .block-container {
+
+    padding-top:
+        2rem;
+
+    padding-left:
+        2rem;
+
+    padding-right:
+        2rem;
+
+    animation:
+        pageFade 0.8s ease;
+}
+
+
+/* ========================================
+   HEADINGS
+======================================== */
+
+h1 {
+
+    text-align:
+        center !important;
+
+    font-size:
+        4rem !important;
+
+    font-weight:
+        800 !important;
+
+    color:
+        #e9d5ff !important;
+
+    letter-spacing:
+        1px;
+
+    margin-bottom:
+        10px;
+
+    animation:
+        fadeInDown 1s ease;
+}
+
+h2 {
+
+    color:
+        #d8b4fe !important;
+}
+
+h3 {
+
+    text-align:
+        center;
+
+    color:
+        #c084fc !important;
+
+    margin-top:
+        -10px;
+
+    margin-bottom:
+        10px;
+}
+
+h4 {
+
+    text-align:
+        center;
+
+    color:
+        #d8b4fe !important;
+
+    margin-bottom:
+        40px;
+}
+
+
+/* ========================================
+   SIDEBAR
+======================================== */
+
+section[data-testid="stSidebar"] {
+
+    background:
+        rgba(18, 8, 35, 0.95);
+
+    border-right:
+        1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+section[data-testid="stSidebar"] * {
+
+    color:
+        white !important;
+}
+
+
+/* ========================================
+   SIDEBAR HOVER EFFECT
+======================================== */
+
+section[data-testid="stSidebar"]
+div[role="button"] {
+
+    border-radius:
+        12px;
+
+    transition:
+        all 0.3s ease;
+}
+
+section[data-testid="stSidebar"]
+div[role="button"]:hover {
+
+    background:
+        rgba(168,85,247,0.18);
+
+    transform:
+        translateX(6px);
+}
+
+
+/* ========================================
+   KPI METRIC CARDS
+======================================== */
+
+[data-testid="metric-container"] {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    background:
+        rgba(255,255,255,0.07);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius:
+        22px;
+
+    padding:
+        28px 20px;
+
+    min-height:
+        170px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    backdrop-filter:
+        blur(14px);
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.35);
+
+    transition:
+        all 0.35s ease;
+}
+
+
+/* KPI HOVER */
+
+[data-testid="metric-container"]:hover {
+
+    transform:
+        translateY(-6px) scale(1.02);
+
+    border:
+        1px solid rgba(216,180,254,0.35);
+
+    box-shadow:
+        0 12px 40px rgba(168,85,247,0.35);
+}
+
+
+/* KPI SHIMMER */
+
+[data-testid="metric-container"]::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        150%;
+
+    height:
+        150%;
+
+    top:
+        -50%;
+
+    left:
+        -50%;
+
+    background:
+        linear-gradient(
+            45deg,
+            transparent,
+            rgba(255,255,255,0.08),
+            transparent
+        );
+
+    transform:
+        rotate(25deg);
+
+    animation:
+        shimmer 5s infinite linear;
+}
+
+
+/* KPI LABEL */
+
+[data-testid="stMetricLabel"] {
+
+    color:
+        #d8b4fe !important;
+
+    font-size:
+        1.1rem !important;
+
+    font-weight:
+        600 !important;
+
+    text-align:
+        center !important;
+
+    justify-content:
+        center !important;
+}
+
+
+/* KPI VALUE */
+
+[data-testid="stMetricValue"] {
+
+    color:
+        white !important;
+
+    font-size:
+        3rem !important;
+
+    font-weight:
+        800 !important;
+
+    text-align:
+        center !important;
+
+    justify-content:
+        center !important;
+}
+
+
+/* ========================================
+   TABS
+======================================== */
+
+.stTabs {
+
+    margin-top:
+        30px;
+}
+
+
+/* TAB BUTTONS */
+
+button[data-baseweb="tab"] {
+
+    padding:
+        12px 26px !important;
+
+    border-radius:
+        14px 14px 0 0 !important;
+
+    margin-right:
+        10px;
+
+    font-weight:
+        700;
+
+    color:
+        white !important;
+
+    transition:
+        all 0.3s ease;
+}
+
+
+/* TAB HOVER */
+
+button[data-baseweb="tab"]:hover {
+
+    background:
+        rgba(168,85,247,0.15) !important;
+
+    transform:
+        translateY(-2px);
+}
+
+
+/* ACTIVE TAB */
+
+button[aria-selected="true"] {
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #c084fc
+        ) !important;
+
+    color:
+        white !important;
+
+    box-shadow:
+        0 8px 25px rgba(168,85,247,0.35);
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.stButton > button {
+
+    width:
+        100%;
+
+    border:
+        none;
+
+    border-radius:
+        14px;
+
+    padding:
+        14px;
+
+    font-size:
+        16px;
+
+    font-weight:
+        700;
+
+    color:
+        white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #7e22ce
+        );
+
+    cursor:
+        pointer;
+
+    transition:
+        all 0.3s ease;
+
+    box-shadow:
+        0 6px 20px rgba(168,85,247,0.35);
+
+    animation:
+        pulseGlow 3s infinite;
+}
+
+
+/* BUTTON HOVER */
+
+.stButton > button:hover {
+
+    transform:
+        scale(1.03);
+
+    background:
+        linear-gradient(
+            135deg,
+            #a855f7,
+            #9333ea
+        );
+
+    box-shadow:
+        0 8px 30px rgba(168,85,247,0.5);
+}
+
+
+/* ========================================
+   INPUT FIELDS
+======================================== */
+
+.stTextInput input,
+.stNumberInput input,
+.stSelectbox div,
+.stSlider {
+
+    border-radius:
+        12px !important;
+}
+
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img {
+
+    border-radius:
+        20px;
+
+    transition:
+        all 0.4s ease;
+}
+
+img:hover {
+
+    transform:
+        translateY(-4px) scale(1.01);
+
+    box-shadow:
+        0 10px 40px rgba(168,85,247,0.35);
+}
+
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+
+    width:
+        10px;
+}
+
+::-webkit-scrollbar-track {
+
+    background:
+        #1e1033;
+}
+
+::-webkit-scrollbar-thumb {
+
+    background:
+        #9333ea;
+
+    border-radius:
+        10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background:
+        #c084fc;
+}
+
+
+/* ========================================
+   CURSOR
+======================================== */
+
+button,
+a,
+.stSelectbox,
+.stSlider,
+[data-baseweb="select"] {
+
+    cursor:
+        pointer !important;
+}
+
+
+/* ========================================
+   LOTTIE CONTAINER
+======================================== */
+
+.lottie-container {
+
+    background:
+        transparent !important;
+
+    border-radius:
+        20px;
+
+    padding:
+        10px;
+}
+
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes pageFade {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(20px);
+
+        filter:
+            blur(5px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0px);
+
+        filter:
+            blur(0px);
+    }
+}
+
+
+@keyframes fadeInDown {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(-25px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0px);
+    }
+}
+
+
+@keyframes shimmer {
+
+    0% {
+
+        transform:
+            translateX(-100%) rotate(25deg);
+    }
+
+    100% {
+
+        transform:
+            translateX(100%) rotate(25deg);
+    }
+}
+
+
+@keyframes pulseGlow {
+
+    0% {
+
+        box-shadow:
+            0 0 0 rgba(168,85,247,0.3);
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 25px rgba(168,85,247,0.45);
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 0 rgba(168,85,247,0.3);
+    }
+}
+
+/* ========================================
+   KPI ALIGNMENT FIX
+======================================== */
+
+[data-testid="metric-container"] {
+
+    text-align:
+        center !important;
+
+    align-items:
+        center !important;
+
+    justify-content:
+        center !important;
+}
+
+
+/* LABEL */
+
+[data-testid="stMetricLabel"] {
+
+    width:
+        100% !important;
+
+    text-align:
+        center !important;
+
+    display:
+        flex !important;
+
+    justify-content:
+        center !important;
+
+    align-items:
+        center !important;
+
+    margin-bottom:
+        12px !important;
+}
+
+
+/* VALUE */
+
+[data-testid="stMetricValue"] {
+
+    width:
+        100% !important;
+
+    text-align:
+        center !important;
+
+    display:
+        flex !important;
+
+    justify-content:
+        center !important;
+
+    align-items:
+        center !important;
+}
+
+/* ========================================
+   MULTI PAGE NAVIGATION
+======================================== */
+
+section[data-testid="stSidebarNav"] {
+
+    padding-top:
+        20px;
+}
+
+
+/* PAGE BUTTONS */
+
+section[data-testid="stSidebarNav"] ul {
+
+    gap:
+        12px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+}
+
+
+/* EACH PAGE ITEM */
+
+section[data-testid="stSidebarNav"] li {
+
+    list-style:
+        none;
+
+    margin-bottom:
+        10px;
+
+    border-radius:
+        16px;
+
+    overflow:
+        hidden;
+
+    transition:
+        all 0.35s ease;
+}
+
+
+/* PAGE LINK */
+
+section[data-testid="stSidebarNav"] a {
+
+    background:
+        rgba(255,255,255,0.04);
+
+    border:
+        1px solid rgba(255,255,255,0.06);
+
+    border-radius:
+        16px;
+
+    padding:
+        14px 18px;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    font-size:
+        1rem;
+
+    font-weight:
+        600;
+
+    color:
+        #f5f3ff !important;
+
+    text-decoration:
+        none !important;
+
+    backdrop-filter:
+        blur(12px);
+
+    transition:
+        all 0.35s ease;
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+}
+
+
+/* SHIMMER EFFECT */
+
+section[data-testid="stSidebarNav"] a::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        -120%;
+
+    width:
+        120%;
+
+    height:
+        100%;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,0.08),
+            transparent
+        );
+
+    transition:
+        all 0.8s ease;
+}
+
+
+/* PAGE HOVER */
+
+section[data-testid="stSidebarNav"] a:hover {
+
+    transform:
+        translateX(8px) scale(1.02);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(168,85,247,0.18),
+            rgba(192,132,252,0.12)
+        );
+
+    border:
+        1px solid rgba(216,180,254,0.25);
+
+    box-shadow:
+        0 8px 25px rgba(168,85,247,0.28);
+}
+
+
+/* SHIMMER MOVE */
+
+section[data-testid="stSidebarNav"] a:hover::before {
+
+    left:
+        120%;
+}
+
+
+/* ACTIVE PAGE */
+
+section[data-testid="stSidebarNav"] li:has(a[aria-current="page"]) a {
+
+    background:
+        linear-gradient(
+            135deg,
+            #9333ea,
+            #c084fc
+        );
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    box-shadow:
+        0 10px 30px rgba(168,85,247,0.45);
+
+    transform:
+        scale(1.03);
+}
+
+
+/* ACTIVE PAGE GLOW */
+
+section[data-testid="stSidebarNav"] li:has(a[aria-current="page"]) {
+
+    animation:
+        activeGlow 3s infinite ease-in-out;
+}
+
+
+/* ICONS */
+
+section[data-testid="stSidebarNav"] svg {
+
+    width:
+        20px !important;
+
+    height:
+        20px !important;
+}
+
+
+/* ========================================
+   PAGE TRANSITIONS
+======================================== */
+
+.main .block-container {
+
+    animation:
+        smoothPageEnter 0.7s ease;
+}
+
+
+/* ========================================
+   FLOATING EFFECT
+======================================== */
+
+[data-testid="metric-container"],
+.stTabs,
+.stButton > button {
+
+    animation:
+        floatCard 6s ease-in-out infinite;
+}
+
+
+/* ========================================
+   ANIMATIONS
+======================================== */
+
+@keyframes smoothPageEnter {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(25px);
+
+        filter:
+            blur(8px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0px);
+
+        filter:
+            blur(0px);
+    }
+}
+
+
+@keyframes activeGlow {
+
+    0% {
+
+        box-shadow:
+            0 0 0 rgba(168,85,247,0.25);
+    }
+
+    50% {
+
+        box-shadow:
+            0 0 25px rgba(168,85,247,0.45);
+    }
+
+    100% {
+
+        box-shadow:
+            0 0 0 rgba(168,85,247,0.25);
+    }
+}
+
+
+@keyframes floatCard {
+
+    0% {
+
+        transform:
+            translateY(0px);
+    }
+
+    50% {
+
+        transform:
+            translateY(-2px);
+    }
+
+    100% {
+
+        transform:
+            translateY(0px);
+    }
+}
+
+/* ========================================
+   PAGE ENTER ANIMATION
+======================================== */
+
+.page-enter-animation {
+
+    animation:
+        pageSmoothEnter 0.9s ease;
+}
+
+
+/* ========================================
+   PAGE CARD ANIMATION
+======================================== */
+
+.stPlotlyChart,
+.stDataFrame,
+[data-testid="metric-container"],
+.stTabs,
+.element-container {
+
+    animation:
+        cardFloat 0.8s ease;
+}
+
+
+/* ========================================
+   CHART HOVER EFFECT
+======================================== */
+
+.stPlotlyChart:hover,
+.stDataFrame:hover {
+
+    transform:
+        translateY(-4px);
+
+    transition:
+        all 0.3s ease;
+}
+
+
+/* ========================================
+   PAGE ANIMATIONS
+======================================== */
+
+@keyframes pageSmoothEnter {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(30px);
+
+        filter:
+            blur(10px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0px);
+
+        filter:
+            blur(0px);
+    }
+}
+
+
+@keyframes cardFloat {
+
+    from {
+
+        opacity:
+            0;
+
+        transform:
+            translateY(20px);
+    }
+
+    to {
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0px);
+    }
+}
