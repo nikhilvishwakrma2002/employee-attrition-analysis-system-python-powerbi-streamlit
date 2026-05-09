@@ -353,15 +353,17 @@ streamlit run app.py
 ## 🏠 Main Application
 
 <p align="center">
-  <img src="assets/screenshots/main_app.png" width="95%">
+  <img src="Reports/Screenshots/main_app_1.png" width="95%">
 </p>
-
+<p align="center">
+  <img src="Reports/Screenshots/main_app_2.png" width="95%">
+</p>
 ---
 
 ## 📊 Executive Dashboard
 
 <p align="center">
-  <img src="assets/screenshots/dashboard.png" width="95%">
+  <img src="Reports/Screenshots/dashboard_app.png" width="95%">
 </p>
 
 ---
@@ -369,7 +371,7 @@ streamlit run app.py
 ## 🔮 Prediction System
 
 <p align="center">
-  <img src="assets/screenshots/prediction.png" width="95%">
+  <img src="Reports/Screenshots/prediction_app.png" width="95%">
 </p>
 
 ---
@@ -377,7 +379,7 @@ streamlit run app.py
 ## 📈 Business Insights
 
 <p align="center">
-  <img src="assets/screenshots/insights.png" width="95%">
+  <img src="Reports/Screenshots/insights_app.png" width="95%">
 </p>
 
 ---
@@ -385,17 +387,33 @@ streamlit run app.py
 ## 📉 Power BI Dashboard
 
 <p align="center">
-  <img src="assets/screenshots/powerbi.png" width="95%">
+  <img src="Reports/Screenshots/Attrition_Analysis.png" width="95%">
 </p>
-
+<p align="center">
+  <img src="Reports/Screenshots/Employee_Risk_Insights.png" width="95%">
+</p>
+<p align="center">
+  <img src="Reports/Screenshots/Executive_Overview.png" width="95%">
+</p>
+<p align="center">
+  <img src="Reports/Screenshots/Salary_&_Satisfaction.png" width="95%">
+</p>
 ---
 
-## 🎨 Modern UI / UX
+## 🎨 Matplotlib
 
 <p align="center">
-  <img src="assets/screenshots/ui_design.png" width="95%">
+  <img src="Reports/Screenshots/attrition_distribution.png" width="95%">
 </p>
-
+<p align="center">
+  <img src="Reports/Screenshots/correlation_heatmap.png" width="95%">
+</p>
+<p align="center">
+  <img src="Reports/Screenshots/department_attrition.png" width="95%">
+</p>
+<p align="center">
+  <img src="Reports/Screenshots/overtime_vs_attrition.png" width="95%">
+</p>
 ---
 
 # 🔥 Future Enhancements
