@@ -325,7 +325,7 @@ The frontend includes:
 ## Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/EAAS-Employee-Attrition-Analysis-System.git
+git clone https://github.com/nikhilvishwakrma2002/employee-attrition-analysis-system-python-powerbi-streamlit.git
 ```
 
 ---
